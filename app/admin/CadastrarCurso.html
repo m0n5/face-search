@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>face search</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+      <div class="container">
+        <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h1 class="panel-title">Carômetro - Cadastro Curso</h1>
+        </div>
+        <div class="panel-body">
+          <form>
+            <div class="form-group">
+              <label for="nomeCurso">Nome do curso:</label>
+              <input type="text" id="nomeCurso" placeholder="Digite o nome" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="periodo">Período:</label>
+              <select class="form-control" id="periodoCurso">
+                <option value='null'>Selecione o período</option>
+                <option value="diurno">Diurno</option>
+                <option value="vespertino">Vespertino</option>
+                <option value="noturno">Noturno</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="campusCurso">Campus:</label>
+              <select class="form-control" id="campusCurso">
+                <option value='null'>Selecione o campus</option>
+                <option value="tatuape">Tatuapé</option>
+                <option value="pinheiros">Pinheiros</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="turmaCurso">Turma:</label>
+              <select class="form-control" id="turmaCurso">
+                <option value='null'>Selecione a turma</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        </div>
+        <div class="panel-footer" style="display: flex; justify-content:space-around">
+          <a href="ListarCursos.html" class="btn" id="voltar">Voltar</a>
+          <a class="btn btn-success" id="cadastrar">Cadastrar</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="../bower_components/axios/dist/axios.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="CadastroAluno.js"></script>
+    <script src="../api/Cloudinary.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

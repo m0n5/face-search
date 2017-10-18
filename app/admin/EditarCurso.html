@@ -23,23 +23,53 @@
     <!-- endbuild -->
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            <img src="logo" alt="LOGO">
-          </a>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+      <div class="container">
+        <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h1 class="panel-title">Carômetro - Editar Curso</h1>
         </div>
-        <a class="navbar-text" href="#">ALUNOS</a>
-        <a class="navbar-text" href="Cursos.html">CURSOS</a>
-        <a class="navbar-text" href="Turmas">TURMAS</a>
-        <button class="btn btn-default navbar-btn navbar-right">SAIR</button>
+        <div class="panel-body">
+          <form>
+            <div class="form-group">
+              <label for="senha">Nome do curso:</label>
+              <input type="text" id="nomeCurso" placeholder="Digite o nome" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="periodoCurso">Período:</label>
+              <select class="form-control" id="periodoCurso">
+                <option value='null'>Selecione o período</option>
+                <option value="diurno">Diurno</option>
+                <option value="vespertino">Vespertino</option>
+                <option value="noturno">Noturno</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="campusCurso">Campus:</label>
+              <select class="form-control" id="campusCurso">
+                <option value='null'>Selecione o campus</option>
+                <option value="tatuape">Tatuapé</option>
+                <option value="pinheiros">Pinheiros</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="turmaCurso">Turma:</label>
+              <select class="form-control" id="turmaCurso">
+                <option value='null'>Selecione a turma</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        </div>
+        <div class="panel-footer" style="display: flex; justify-content:space-around">
+          <a href="ListarCursos.html" class="btn" id="voltar">Voltar</a>
+          <a class="btn btn-success" id="cadastrar">Cadastrar</a>
+        </div>
       </div>
-    </nav>
-    <div class="container">
-
     </div>
-
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -65,7 +95,8 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
-    <!-- <script src="../api/Cloudinary.js"></script> -->
+    <script src="CadastroAluno.js"></script>
+    <script src="../api/Cloudinary.js"></script>
     <!-- endbuild -->
   </body>
 </html>
