@@ -22,7 +22,7 @@
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
+  <body background="../unicid.png">
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
@@ -30,13 +30,19 @@
       <div class="container">
         <div class="panel panel-primary">
         <div class="panel-heading">
-          <h1 class="panel-title">Carômetro - Editar Curso</h1>
+          <img src="../logo-icone.png" class="logo-index">
+          <h1 class="panel-title">&nbsp;&nbsp;Carômetro - Editar Curso</h1>
         </div>
         <div class="panel-body">
           <form>
             <div class="form-group">
               <label for="senha">Nome do curso:</label>
-              <input type="text" id="nomeCurso" placeholder="Digite o nome" class="form-control">
+              <select class="form-control" id="nomeCurso">
+                <option value='null'>Selecione o curso</option>
+                <option value="diurno">1</option>
+                <option value="vespertino">2</option>
+                <option value="noturno">3</option>
+              </select>
             </div>
             <div class="form-group">
               <label for="periodoCurso">Período:</label>
@@ -55,10 +61,26 @@
                 <option value="pinheiros">Pinheiros</option>
               </select>
             </div>
+            <hr>
             <div class="form-group">
-              <label for="turmaCurso">Turma:</label>
-              <select class="form-control" id="turmaCurso">
-                <option value='null'>Selecione a turma</option>
+              <label for="nomeTurma">Editar Nome:</label>
+              <input type="text" id="email" placeholder="Digite o novo nome do curso" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="periodoCurso">Editar período:</label>
+              <select class="form-control" id="periodoCurso">
+                <option value='null'>Selecione o período</option>
+                <option value="diurno">Diurno</option>
+                <option value="vespertino">Vespertino</option>
+                <option value="noturno">Noturno</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="campusCurso">Campus:</label>
+              <select class="form-control" id="campusCurso">
+                <option value='null'>Selecione o campus</option>
+                <option value="tatuape">Tatuapé</option>
+                <option value="pinheiros">Pinheiros</option>
               </select>
             </div>
           </form>
@@ -66,7 +88,8 @@
         </div>
         <div class="panel-footer" style="display: flex; justify-content:space-around">
           <a href="ListarCursos.html" class="btn" id="voltar">Voltar</a>
-          <a class="btn btn-success" id="cadastrar">Cadastrar</a>
+          <a class="btn btn-success" id="cadastrar">Editar</a>
+          <button type="button" class="btn btn-danger">Excluir</button>
         </div>
       </div>
     </div>

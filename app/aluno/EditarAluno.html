@@ -22,7 +22,7 @@
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
+  <body background="../degrade.jpg">
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
@@ -30,7 +30,8 @@
       <div class="container">
         <div class="panel panel-primary">
         <div class="panel-heading">
-          <h1 class="panel-title">Carômetro - Cadastro Aluno</h1>
+          <img src="../logo-icone.png" class="logo-index">
+          <h1 class="panel-title">1&nbsp;&nbsp;Carômetro - Cadastro Aluno</h1>
         </div>
         <div class="panel-body">
           <form>
@@ -72,14 +73,14 @@
               </div>
               <div class="form-group">
                 <label for="nasc">Data de nascimento:</label>
-                <input type="date" id="nasc" placeholder="DD/MM/AAAA" class="form-control">
+                <input type="date" id="nasc" placeholder="DD/MM/AAAA" class="form-control" disabled>
               </div>
             </div>
             <div class="col-sm-4">
               <h2 class="panel-subtitle">Informações Acadêmicas</h2>
               <div class="form-group">
-                <label for="rgm">RGM:</label>
-                <input type="text" id="rgm" placeholder="Digite o rmg" class="form-control">
+                <label for="rgm" >RGM:</label>
+                <input type="text" id="rgm" placeholder="Digite o rmg" class="form-control" disabled>
               </div>
               <div class="form-group">
                 <label for="curso">Curso:</label>
@@ -112,7 +113,7 @@
                 <h2 class="panel-subtitle">Características físicas</h2>
                   <div class="form-group">
                     <label for="pele">Tom de Pele:</label>
-                    <select class="form-control" id="pele">
+                    <select class="form-control" id="pele" disabled>
                       <option value='null'>Selecione o tom de pele</option>
                       <option value="negro">Negro</option>
                       <option value="pardo">Pardo</option>
